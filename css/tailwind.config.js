@@ -2,6 +2,12 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  mode: 'jit',
+  // These paths are just examples, customize them to match your project structure
+  purge: [
+    'tehetsegkatapult/**/*.html',
+    'src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
   theme: {
     colors: {
       gray: colors.coolGray,

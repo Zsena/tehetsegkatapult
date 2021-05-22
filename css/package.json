@@ -4,7 +4,9 @@
   "description": "lkalka",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "watch": "NODE_ENV=development postcss tailwind.css -o ./dist/tailwind.css -w",
+    "build": "NODE_ENV=production postcss tailwind.css -o ./dist/tailwind.css"
   },
   "repository": {
     "type": "git",
