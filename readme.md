@@ -10,6 +10,23 @@ Dev site : [Geekrabbits](https://geekrabbits.hu/) ![](https://geekrabbits.hu/img
 | Design: Figma     | Zsena & Bence     |   css, Tailwind, Flexbox |
 |  Frontend | Zsena & Bence      |    Alpine.js, Hugo |
 
+
+---
+
+# Project start 
+
+```
+git clone ...
+
+npm install
+
+npm watch // Will start a long-running watch process
+
+npm build  // Will perform a one-off build
+
+```
+[Watch mode doc](https://tailwindcss.com/docs/just-in-time-mode#watch-mode-and-one-off-builds)
+
 ---
 
 # Tailwind CSS
