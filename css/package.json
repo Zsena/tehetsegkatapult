@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "watch": "NODE_ENV=development postcss tailwind.css -o ./dist/tailwind.css -w",
-    "build": "NODE_ENV=production postcss tailwind.css -o ./dist/tailwind.css"
+    "watch": "NODE_ENV=development postcss main.css -o ./dist/tailwind.css -w",
+    "build": "NODE_ENV=production npx tailwindcss-cli@latest build ./main.css -o ./dist/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   "homepage": "https://github.com/Zsena/tehetsegkatapult#readme",
   "dependencies": {
     "autoprefixer": "^10.2.5",
-    "npx": "^10.2.2",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
   }
 }
