@@ -1,0 +1,27 @@
+{
+  "name": "tehetsegkatapult",
+  "version": "1.0.0",
+  "description": "lkalka",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Zsena/tehetsegkatapult.git"
+  },
+  "keywords": [
+    "maakakkaka"
+  ],
+  "author": "Zsena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zsena/tehetsegkatapult/issues"
+  },
+  "homepage": "https://github.com/Zsena/tehetsegkatapult#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "npx": "^10.2.2",
+    "tailwindcss": "^2.1.2"
+  }
+}
