@@ -10,6 +10,7 @@ Dev site : [Geekrabbits](https://geekrabbits.hu/) ![](https://geekrabbits.hu/img
 | Design: Figma     | Zsena & Bence     |   css, Tailwind, Flexbox |
 |  Frontend | Zsena & Bence      |    Alpine.js, Hugo |
 
+Design: [Figma](https://www.figma.com/file/zdCvW3Jw109usIM8u6XQmG/Tehets%C3%A9gkatapult-desktop-design)
 
 ---
 
