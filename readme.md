@@ -21,6 +21,8 @@ git clone ...
 
 npm install
 
+cd into css folder
+
 npm run build // Will perform a one-off build
 
 npm i -g postcss-cli

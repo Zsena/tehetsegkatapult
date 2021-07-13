@@ -1,32 +1,30 @@
 {
-  "name": "tehetsegkatapult",
-  "version": "1.0.0",
-  "description": "lkalka",
-  "main": "index.js",
-  "scripts": {
-    "test": "test",
-    "watch": "NODE_ENV=development postcss main.css -o ./dist/tailwind.css -w",
-    "build": "NODE_ENV=production npx tailwindcss-cli@latest build ./main.css -o ./dist/tailwind.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Zsena/tehetsegkatapult.git"
-  },
-  "keywords": [
-    "maakakkaka"
-  ],
-  "author": "Zsena",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zsena/tehetsegkatapult/issues"
-  },
-  "homepage": "https://github.com/Zsena/tehetsegkatapult#readme",
-  "dependencies": {
-    "postcss-cli": "^8.3.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
-  }
+    "name": "tehetsegkatapult",
+    "version": "1.0.0",
+    "description": "lkalka",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "watch": "NODE_ENV=development postcss main.css -o ./dist/tailwind.css -w",
+        "build": "NODE_ENV=production npx tailwindcss-cli@latest build ./main.css -o ./dist/tailwind.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/Zsena/tehetsegkatapult.git"
+    },
+    "keywords": [
+        "maakakkaka"
+    ],
+    "author": "Zsena",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Zsena/tehetsegkatapult/issues"
+    },
+    "homepage": "https://github.com/Zsena/tehetsegkatapult#readme",
+    "dependencies": {
+        "autoprefixer": "^10.2.5",
+        "postcss": "^8.3.0",
+        "postcss-cli": "^8.3.1",
+        "tailwindcss": "^2.1.2"
+    }
 }
