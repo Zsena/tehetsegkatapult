@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        loremblue: "#99EFD0",
-        ipsumyellow: "#D1C941",
+        cyanBlue: "#99EFD0",
+        letterYellow: "#D1C941",
       },
     },
   },
