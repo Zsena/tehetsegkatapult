@@ -7,8 +7,11 @@ module.exports = {
   mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      
+    extend: {
+      colors: {
+        loremblue: "#99EFD0",
+        ipsumyellow: "#D1C941",
+      },
     },
   },
   variants: {
