@@ -1,11 +1,48 @@
 @tailwind base;
 @tailwind components;
 
-.btn {
-  @apply px-4 py-2 bg-blue-600 text-white rounded;
+@layer utilities {
+  
+  .flex-center {
+    @apply inline-flex items-center justify-center;
+  }
+
+  .geek-container {
+    @apply xl:max-w-[1280px]
+  }
 }
 
-/* nav.css */
+.geek-base-btn {
+  @apply md:max-w-[170px] w-full text-white flex-center text-sm tracking-wider font-semibold rounded py-3 shadow-md focus:outline-none;
+}
+
+.geek-cyan-btn {
+  @apply bg-geek/cyan-blue hover:bg-transparent border hover:border-geek/cyan-blue hover:text-geek/cyan-blue 
+  focus:bg-geek/yellow focus:text-white;
+}
+
+.geek-outline-btn {
+  @apply md:max-w-[170px] w-full flex-center text-geek/yellow text-sm tracking-wider border border-geek/yellow
+  rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
+}
+
+.site-gradient-top {
+  background: rgb(0,77,136);
+  background: linear-gradient(0deg, rgba(0,77,136,100%) 20%, rgba(4,13,62,100%) 50%, rgba(107,177,229,1) 100%);
+}
+
+.site-gradient-bottom {
+  background: rgb(0,77,136);
+  background: linear-gradient(90deg, rgba(0,77,136,1) 0%, rgba(0,77,136,1) 100%);
+}
+
+
+
+/* hero */
+
+.hero-container {
+  @apply flex-col-reverse flex lg:flex-row justify-between container geek-container mx-auto;
+}
 
 
 @tailwind utilities;

@@ -11,6 +11,10 @@ module.exports = {
       colors: {
         cyanBlue: "#99EFD0",
         letterYellow: "#D1C941",
+        "geek/dark-blue" : '#040D3E',
+        "geek/light-blue" : '#004d88',
+        "geek/cyan-blue" : '#99EFD0',
+        "geek/yellow" : '#D1C941'
       },
     },
   },
