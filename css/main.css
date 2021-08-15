@@ -13,7 +13,7 @@
 }
 
 .geek-base-btn {
-  @apply md:max-w-[170px] w-full text-white flex-center text-sm tracking-wider font-semibold rounded py-3 shadow-md focus:outline-none;
+  @apply md:w-[170px] w-full text-white flex-center text-sm tracking-wider font-semibold rounded py-3 shadow-md focus:outline-none;
 }
 
 .geek-cyan-btn {
@@ -22,7 +22,7 @@
 }
 
 .geek-outline-btn {
-  @apply md:max-w-[170px] w-full flex-center text-geek/yellow text-sm tracking-wider border border-geek/yellow
+  @apply md:w-[170px] w-full flex-center text-geek/yellow text-sm tracking-wider border border-geek/yellow
   rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
 }
 
