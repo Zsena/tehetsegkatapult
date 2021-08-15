@@ -21,9 +21,15 @@ git clone ...
 
 npm install
 
-npm watch // Will start a long-running watch process
+cd into css folder
 
-npm build  // Will perform a one-off build
+npm run build // Will perform a one-off build
+
+npm i -g postcss-cli
+
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+
+npm run watch // Will start a long-running watch process
 
 ```
 [Watch mode doc](https://tailwindcss.com/docs/just-in-time-mode#watch-mode-and-one-off-builds)
