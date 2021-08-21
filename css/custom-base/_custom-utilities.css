@@ -1,0 +1,9 @@
+@layer utilities {
+  .flex-center {
+    @apply inline-flex items-center justify-center;
+  }
+
+  .geek-container {
+    @apply xl:max-w-[1280px];
+  }
+}

@@ -1,0 +1,15 @@
+.navbar {
+  @apply hidden xl:flex items-center space-x-1 list-none tracking-widest;
+}
+
+.nav-item {
+  @apply text-white font-roboto-regular hover:text-geek/cyan-blue transition duration-300 uppercase;
+}
+
+.nav-list {
+  @apply py-4 px-4;
+}
+
+.nav-list.active {
+  @apply border-b-4 border-geek/cyan-blue;
+}

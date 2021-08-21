@@ -1,0 +1,4 @@
+.geek-cyan-btn {
+  @apply bg-geek/cyan-blue hover:bg-transparent border hover:border-geek/cyan-blue hover:text-geek/cyan-blue 
+      focus:bg-geek/yellow focus:text-white;
+}

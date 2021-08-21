@@ -1,0 +1,14 @@
+@import "_fonts.css";
+
+@layer base {
+
+  /* ----- base button styles ------ */
+  .geek-base-btn {
+    @apply font-rubik-medium tracking-widest md:w-[170px] w-full text-white flex-center text-sm rounded py-3 shadow-md focus:outline-none;
+  }
+
+  .geek-outline-btn {
+    @apply font-rubik-medium tracking-widest md:w-[170px] w-full flex-center text-geek/yellow text-sm border border-geek/yellow
+      rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
+  }
+}
