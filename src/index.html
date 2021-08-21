@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/dist/tailwind.css">
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <title>Document</title>
 </head>
 <body class="site-gradient-bottom">
@@ -13,7 +16,7 @@
             <header class="min-h-[100px] container geek-container mx-auto">
                 <p class="hidden lg:flex justify-end font-roboto-medium text-white relative top-[3rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                 <!-- Navbar goes here -->
-                <nav class="mb-16">
+                <nav x-data="dropdown" class="mb-16">
                     <div class="flex justify-between">
 
                         <div class="flex space-x-7">
@@ -39,24 +42,19 @@
                             <button type="button" class="geek-outline-btn uppercase">Ipsum</button>
                         </div>
                         <!-- Mobile menu button -->
-                        <div class="xl:hidden flex items-center">
+                        <div @click="toggle" class="xl:hidden flex items-center">
                             <button class="outline-none mobile-menu-button">
-                            <svg class="w-6 h-6 text-gray-500 hover:text-green-500 "
-                                x-show="!showMenu"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
+                            <div x-show="!open">
+                                <img src="../src//images/close_menu.svg" alt="">
+                            </div>
+                            <div x-show="open">
+                                <img src="../src//images/open_menu.svg" alt="">
+                            </div>
                         </button>
                         </div>
                     </div>
                     <!-- mobile menu -->
-                    <div class="hidden mobile-menu">
+                    <div x-show="open" class=" mobile-menu">
                         <ul class="flex flex-col justify-center text-center list-none">
                             <li class="nav-list lg:hidden">
                                 <p class="font-roboto-medium text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
@@ -71,14 +69,6 @@
                             <li class="nav-list"><button type="button" class="md:hidden geek-outline-btn uppercase w-full">Ipsum</button></li>
                         </ul>
                     </div>
-                    <script>
-                        const btn = document.querySelector("button.mobile-menu-button");
-                        const menu = document.querySelector(".mobile-menu");
-
-                        btn.addEventListener("click", () => {
-                            menu.classList.toggle("hidden");
-                        });
-                    </script>
                 </nav>
             </header>
             <section class="hero-container">
@@ -101,18 +91,37 @@
                 </div>
             </section>
     
-            <article class="min-h-[700px]">
-    
-            </article>
+            <section class="container geek-container mx-auto">
+                <div class="flex flex-col items-center justify-between">
+                    <div class="w-full flex items-center justify-between p-10" style="min-height: 400px;">
+                        <div x-data="dropdown" class="w-full p-5 flex flex-col items-center justify-center">
+                            <h2 class="gray-heading cursor-pointer" @click="toggle"><u class="flex items-center"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Partnereink</span></u></h2>
+                            <div class="w-full mt-10 flex flex-col lg:hidden items-center justify-between">
+                                <h2 class="gray-heading flex items-center" x-show="open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Apple</span></h2>
+                                <h2 class="gray-heading flex items-center" x-show="open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Geekrabbits</span></h2>
+                                <h2 class="gray-heading flex items-center"  x-show="open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Telecom</span></h2>
+                                <h2 class="gray-heading flex items-center"  x-show="open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Vodafone</span></h2>
+                            </div>
+                            <div class="w-full mt-10  hidden lg:flex items-center justify-between">
+                                <h2 class="gray-heading flex items-center" x-show="!open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Apple</span></h2>
+                                <h2 class="gray-heading flex items-center" x-show="!open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Geekrabbits</span></h2>
+                                <h2 class="gray-heading flex items-center"  x-show="!open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Telecom</span></h2>
+                                <h2 class="gray-heading flex items-center"  x-show="!open"><img src="../src/images/attachment.svg" alt="Partnerek"><span class="ml-3">Vodafone</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+               
+            </section>
         </section>
     
     
         <section class="min-h-[700px]">
-    
         </section>
     </main>
     
     <footer></footer>
-
+    <script src="../src/js/main.js"></script>
 </body>
 </html>

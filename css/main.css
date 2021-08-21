@@ -9,5 +9,7 @@
 @import "./custom-components/_nav.css";
 
 @import "./site/_hero.css";
+@import "./site/_partners.css";
+
 
 @tailwind utilities;
