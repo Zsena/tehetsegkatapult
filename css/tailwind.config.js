@@ -19,6 +19,9 @@ module.exports = {
     },
     fontFamily: {
       'rubik-medium': ['Rubik-Medium'],
+      'inter-bold': ['Inter-Bold'],
+      'roboto-regular': ['Roboto-Regular'],
+      'roboto-medium': ['Roboto-Medium'],
      },
   },
   variants: {

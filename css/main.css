@@ -65,7 +65,7 @@
       url(" ../fonts/inter/Inter-Bold.ttf") format("truetype"),
       url(" ../fonts/inter/Inter-Bold.woff") format("woff"),
       url(" ../fonts/inter/Inter-Bold.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
   }
 
@@ -108,7 +108,7 @@
       url(" ../fonts/roboto/Roboto-Regular.ttf") format("truetype"),
       url(" ../fonts/roboto/Roboto-Regular.woff") format("woff"),
       url(" ../fonts/roboto/Roboto-Regular.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 
@@ -134,7 +134,7 @@
       url(" ../fonts/roboto/Roboto-Medium.ttf") format("truetype"),
       url(" ../fonts/roboto/Roboto-Medium.woff") format("woff"),
       url(" ../fonts/roboto/Roboto-Medium.woff2") format("woff2");
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
   }
 
@@ -275,6 +275,22 @@
     font-weight: normal;
     font-style: normal;
   }
+
+   /* ----- base button styles ------ */
+
+  .geek-base-btn {
+    @apply font-rubik-medium tracking-widest md:w-[170px] w-full text-white flex-center text-sm rounded py-3 shadow-md focus:outline-none;
+  }
+  
+  .geek-cyan-btn {
+    @apply bg-geek/cyan-blue hover:bg-transparent border hover:border-geek/cyan-blue hover:text-geek/cyan-blue 
+    focus:bg-geek/yellow focus:text-white;
+  }
+  
+  .geek-outline-btn {
+    @apply font-rubik-medium tracking-widest md:w-[170px] w-full flex-center text-geek/yellow text-sm border border-geek/yellow
+    rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
+  }
 }
 
 @layer utilities {
@@ -287,18 +303,20 @@
   }
 }
 
-.geek-base-btn {
-  @apply font-rubik-medium md:w-[170px] w-full text-white flex-center text-sm tracking-wider rounded py-3 shadow-md focus:outline-none;
+.navbar {
+  @apply hidden xl:flex items-center space-x-1 list-none tracking-widest;
 }
 
-.geek-cyan-btn {
-  @apply bg-geek/cyan-blue hover:bg-transparent border hover:border-geek/cyan-blue hover:text-geek/cyan-blue 
-  focus:bg-geek/yellow focus:text-white;
+.nav-item {
+  @apply text-white font-roboto-regular hover:text-geek/cyan-blue transition duration-300 uppercase;
 }
 
-.geek-outline-btn {
-  @apply font-rubik-medium md:w-[170px] w-full flex-center text-geek/yellow text-sm tracking-wider border border-geek/yellow
-  rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
+.nav-list {
+  @apply py-4 px-4;
+}
+
+.nav-list.active {
+  @apply border-b-4 border-geek/cyan-blue;
 }
 
 .site-gradient-top {
