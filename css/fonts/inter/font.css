@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Inter-Black';
+  src: url('Inter-Black.eot');
+  src: url('Inter-Black.eot?#iefix') format('embedded-opentype'),
+       url('Inter-Black.svg#Inter-Black') format('svg'),
+       url('Inter-Black.ttf') format('truetype'),
+       url('Inter-Black.woff') format('woff'),
+       url('Inter-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

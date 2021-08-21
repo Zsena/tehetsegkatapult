@@ -17,6 +17,9 @@ module.exports = {
         "geek/yellow" : '#D1C941'
       },
     },
+    fontFamily: {
+      'rubik-medium': ['Rubik-Medium'],
+     },
   },
   variants: {
     extend: {},

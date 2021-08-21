@@ -1,19 +1,294 @@
 @tailwind base;
 @tailwind components;
 
+@layer base {
+  /* ----- Inter: base heading text ------ */
+
+  @font-face {
+    font-family: "Inter-Light";
+    src: url(" ../fonts/inter/Inter-Light.eot");
+    src: url(" ../fonts/inter/Inter-Light.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/inter/Inter-Light.svg#Inter-Light") format("svg"),
+      url(" ../fonts/inter/Inter-Light.ttf") format("truetype"),
+      url(" ../fonts/inter/Inter-Light.woff") format("woff"),
+      url(" ../fonts/inter/Inter-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Inter-Regular";
+    src: url(" ../fonts/inter/Inter-Regular.eot");
+    src: url(" ../fonts/inter/Inter-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/inter/Inter-Regular.svg#Inter-Regular") format("svg"),
+      url(" ../fonts/inter/Inter-Regular.ttf") format("truetype"),
+      url(" ../fonts/inter/Inter-Regular.woff") format("woff"),
+      url(" ../fonts/inter/Inter-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Inter-Medium";
+    src: url(" ../fonts/inter/Inter-Medium.eot");
+    src: url(" ../fonts/inter/Inter-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/inter/Inter-Medium.svg#Inter-Medium") format("svg"),
+      url(" ../fonts/inter/Inter-Medium.ttf") format("truetype"),
+      url(" ../fonts/inter/Inter-Medium.woff") format("woff"),
+      url(" ../fonts/inter/Inter-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Inter-SemiBold";
+    src: url(" ../fonts/inter/Inter-SemiBold.eot");
+    src: url(" ../fonts/inter/Inter-SemiBold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/inter/Inter-SemiBold.svg#Inter-SemiBold") format("svg"),
+      url(" ../fonts/inter/Inter-SemiBold.ttf") format("truetype"),
+      url(" ../fonts/inter/Inter-SemiBold.woff") format("woff"),
+      url(" ../fonts/inter/Inter-SemiBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Inter-Bold";
+    src: url(" ../fonts/inter/Inter-Bold.eot");
+    src: url(" ../fonts/inter/Inter-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/inter/Inter-Bold.svg#Inter-Bold") format("svg"),
+      url(" ../fonts/inter/Inter-Bold.ttf") format("truetype"),
+      url(" ../fonts/inter/Inter-Bold.woff") format("woff"),
+      url(" ../fonts/inter/Inter-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* ----- Inder: base heading second text ------ */
+
+  @font-face {
+    font-family: "Inder-Regular";
+    src: url(" ../fonts/inder/Inder-Regular.eot");
+    src: url(" ../fonts/inder/Inder-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/inder/Inder-Regular.svg#Inder-Regular") format("svg"),
+      url(" ../fonts/inder/Inder-Regular.ttf") format("truetype"),
+      url(" ../fonts/inder/Inder-Regular.woff") format("woff"),
+      url(" ../fonts/inder/Inder-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* ----- Roboto: base paragraph text ------ */
+
+  @font-face {
+    font-family: "Roboto-Light";
+    src: url(" ../fonts/roboto/Roboto-Light.eot");
+    src: url(" ../fonts/roboto/Roboto-Light.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/roboto/Roboto-Light.svg#Roboto-Light") format("svg"),
+      url(" ../fonts/roboto/Roboto-Light.ttf") format("truetype"),
+      url(" ../fonts/roboto/Roboto-Light.woff") format("woff"),
+      url(" ../fonts/roboto/Roboto-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(" ../fonts/roboto/Roboto-Regular.eot");
+    src: url(" ../fonts/roboto/Roboto-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/roboto/Roboto-Regular.svg#Roboto-Regular") format("svg"),
+      url(" ../fonts/roboto/Roboto-Regular.ttf") format("truetype"),
+      url(" ../fonts/roboto/Roboto-Regular.woff") format("woff"),
+      url(" ../fonts/roboto/Roboto-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url(" ../fonts/roboto/Roboto-Bold.eot");
+    src: url(" ../fonts/roboto/Roboto-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/roboto/Roboto-Bold.svg#Roboto-Bold") format("svg"),
+      url(" ../fonts/roboto/Roboto-Bold.ttf") format("truetype"),
+      url(" ../fonts/roboto/Roboto-Bold.woff") format("woff"),
+      url(" ../fonts/roboto/Roboto-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Roboto-Medium";
+    src: url(" ../fonts/roboto/Roboto-Medium.eot");
+    src: url(" ../fonts/roboto/Roboto-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/roboto/Roboto-Medium.svg#Roboto-Medium") format("svg"),
+      url(" ../fonts/roboto/Roboto-Medium.ttf") format("truetype"),
+      url(" ../fonts/roboto/Roboto-Medium.woff") format("woff"),
+      url(" ../fonts/roboto/Roboto-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* ----- Montserrat: small base text ------ */
+  @font-face {
+    font-family: "Montserrat-Light";
+    src: url(" ../fonts/montserrat/Montserrat-Light.eot");
+    src: url(" ../fonts/montserrat/Montserrat-Light.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/montserrat/Montserrat-Light.svg#Montserrat-Light")
+        format("svg"),
+      url(" ../fonts/montserrat/Montserrat-Light.ttf") format("truetype"),
+      url(" ../fonts/montserrat/Montserrat-Light.woff") format("woff"),
+      url(" ../fonts/montserrat/Montserrat-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url(" ../fonts/montserrat/Montserrat-Regular.eot");
+    src: url(" ../fonts/montserrat/Montserrat-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular")
+        format("svg"),
+      url(" ../fonts/montserrat/Montserrat-Regular.ttf") format("truetype"),
+      url(" ../fonts/montserrat/Montserrat-Regular.woff") format("woff"),
+      url(" ../fonts/montserrat/Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Montserrat-Medium";
+    src: url(" ../fonts/montserrat/Montserrat-Medium.eot");
+    src: url(" ../fonts/montserrat/Montserrat-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/montserrat/Montserrat-Medium.svg#Montserrat-Medium")
+        format("svg"),
+      url(" ../fonts/montserrat/Montserrat-Medium.ttf") format("truetype"),
+      url(" ../fonts/montserrat/Montserrat-Medium.woff") format("woff"),
+      url(" ../fonts/montserrat/Montserrat-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url(" ../fonts/montserrat/Montserrat-SemiBold.eot");
+    src: url(" ../fonts/montserrat/Montserrat-SemiBold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold")
+        format("svg"),
+      url(" ../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype"),
+      url(" ../fonts/montserrat/Montserrat-SemiBold.woff") format("woff"),
+      url(" ../fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Montserrat-Bold";
+    src: url(" ../fonts/montserrat/Montserrat-Bold.eot");
+    src: url(" ../fonts/montserrat/Montserrat-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/montserrat/Montserrat-Bold.svg#Montserrat-Bold")
+        format("svg"),
+      url(" ../fonts/montserrat/Montserrat-Bold.ttf") format("truetype"),
+      url(" ../fonts/montserrat/Montserrat-Bold.woff") format("woff"),
+      url(" ../fonts/montserrat/Montserrat-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* ----- Rubik: base button text ------ */
+
+  @font-face {
+    font-family: "Rubik-Light";
+    src: url(" ../fonts/rubik/Rubik-Light.eot");
+    src: url(" ../fonts/rubik/Rubik-Light.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/rubik/Rubik-Light.svg#Rubik-Light") format("svg"),
+      url(" ../fonts/rubik/Rubik-Light.ttf") format("truetype"),
+      url(" ../fonts/rubik/Rubik-Light.woff") format("woff"),
+      url(" ../fonts/rubik/Rubik-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rubik-Regular";
+    src: url(" ../fonts/rubik/Rubik-Regular.eot");
+    src: url(" ../fonts/rubik/Rubik-Regular.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/rubik/Rubik-Regular.svg#Rubik-Regular") format("svg"),
+      url(" ../fonts/rubik/Rubik-Regular.ttf") format("truetype"),
+      url(" ../fonts/rubik/Rubik-Regular.woff") format("woff"),
+      url(" ../fonts/rubik/Rubik-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rubik-Medium";
+    src: url(" ../fonts/rubik/Rubik-Medium.eot");
+    src: url(" ../fonts/rubik/Rubik-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/rubik/Rubik-Medium.svg#Rubik-Medium") format("svg"),
+      url(" ../fonts/rubik/Rubik-Medium.ttf") format("truetype"),
+      url(" ../fonts/rubik/Rubik-Medium.woff") format("woff"),
+      url(" ../fonts/rubik/Rubik-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rubik-SemiBold";
+    src: url(" ../fonts/rubik/Rubik-SemiBold.eot");
+    src: url(" ../fonts/rubik/Rubik-SemiBold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/rubik/Rubik-SemiBold.svg#Rubik-SemiBold") format("svg"),
+      url(" ../fonts/rubik/Rubik-SemiBold.ttf") format("truetype"),
+      url(" ../fonts/rubik/Rubik-SemiBold.woff") format("woff"),
+      url(" ../fonts/rubik/Rubik-SemiBold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Rubik-Bold";
+    src: url(" ../fonts/rubik/Rubik-Bold.eot");
+    src: url(" ../fonts/rubik/Rubik-Bold.eot?#iefix")
+        format("embedded-opentype"),
+      url(" ../fonts/rubik/Rubik-Bold.svg#Rubik-Bold") format("svg"),
+      url(" ../fonts/rubik/Rubik-Bold.ttf") format("truetype"),
+      url(" ../fonts/rubik/Rubik-Bold.woff") format("woff"),
+      url(" ../fonts/rubik/Rubik-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
 @layer utilities {
-  
   .flex-center {
     @apply inline-flex items-center justify-center;
   }
 
   .geek-container {
-    @apply xl:max-w-[1280px]
+    @apply xl:max-w-[1280px];
   }
 }
 
 .geek-base-btn {
-  @apply md:w-[170px] w-full text-white flex-center text-sm tracking-wider font-semibold rounded py-3 shadow-md focus:outline-none;
+  @apply font-rubik-medium md:w-[170px] w-full text-white flex-center text-sm tracking-wider rounded py-3 shadow-md focus:outline-none;
 }
 
 .geek-cyan-btn {
@@ -22,27 +297,33 @@
 }
 
 .geek-outline-btn {
-  @apply md:w-[170px] w-full flex-center text-geek/yellow text-sm tracking-wider border border-geek/yellow
+  @apply font-rubik-medium md:w-[170px] w-full flex-center text-geek/yellow text-sm tracking-wider border border-geek/yellow
   rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
 }
 
 .site-gradient-top {
-  background: rgb(0,77,136);
-  background: linear-gradient(0deg, rgba(0,77,136,100%) 20%, rgba(4,13,62,100%) 50%, rgba(107,177,229,1) 100%);
+  background: rgb(0, 77, 136);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 77, 136, 100%) 20%,
+    rgba(4, 13, 62, 100%) 50%,
+    rgba(107, 177, 229, 1) 100%
+  );
 }
 
 .site-gradient-bottom {
-  background: rgb(0,77,136);
-  background: linear-gradient(90deg, rgba(0,77,136,1) 0%, rgba(0,77,136,1) 100%);
+  background: rgb(0, 77, 136);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 77, 136, 1) 0%,
+    rgba(0, 77, 136, 1) 100%
+  );
 }
-
-
 
 /* hero */
 
 .hero-container {
   @apply flex-col-reverse flex lg:flex-row justify-between container geek-container mx-auto;
 }
-
 
 @tailwind utilities;
