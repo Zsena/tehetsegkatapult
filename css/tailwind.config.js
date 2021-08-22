@@ -16,7 +16,10 @@ module.exports = {
         "geek/cyan-blue" : '#99EFD0',
         "geek/yellow" : '#D1C941',
         "geek/gray" : '#c2c1c1',
-        "white" : '#FAFAFA'
+        "white" : '#FAFAFA',
+        'geek/menu-bg-base' : '#878f9f',
+        'geek/menu-bg': 'rgba(135, 143, 159, .75)',
+        'geek/menu-bg-2': 'rgba(135, 143, 159, .95)',
       },
     },
     fontFamily: {

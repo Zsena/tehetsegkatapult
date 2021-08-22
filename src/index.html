@@ -14,66 +14,69 @@
 </head>
 <body class="site-gradient-bottom" id="top">
     <main class="">
-        <section class="site-gradient-top px-5">
-            <header class="min-h-[100px] container geek-container mx-auto">
-                <p class="hidden lg:flex justify-end font-roboto-medium text-white relative top-[3rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                <!-- Navbar goes here -->
-                <nav x-data="dropdown" class="mb-16">
-                    <div class="flex justify-between">
-
-                        <div class="flex space-x-7">
-                            <div>
-                                <!-- Website Logo -->
-                                <a href="#" class="flex items-center py-4 px-2">
-                                    <img src="../src/images/svg/logo.svg" alt="Logo" class="mr-5">
-                                </a>
+        <section class="site-gradient-top" x-data="{ showSticky: false }">
+            <header class="min-h-[100px] top-0 z-10 bg-geek/menu-bg xl:bg-transparent" :class="{ 'sticky xl:bg-geek/menu-bg-2 shadow transition duration-100' : showSticky }"
+                @scroll.window="showSticky = (window.pageYOffset > 20) ? true : false">
+                <div class="container geek-container px-5 mx-auto">
+                    <p class="hidden lg:flex justify-end font-roboto-medium text-white relative top-[3rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    <!-- Navbar goes here -->
+                    <nav x-data="dropdown" class="mb-16">
+                        <div class="flex justify-between">
+    
+                            <div class="flex space-x-7">
+                                <div>
+                                    <!-- Website Logo -->
+                                    <a href="#" class="flex items-center py-4 px-2">
+                                        <img src="../src/images/svg/logo.svg" alt="Logo" class="mr-5">
+                                    </a>
+                                </div>
+                                <!-- Primary Navbar items -->
+                                <div class="navbar">
+                                    <li class="nav-list active"><a href="#top" class="nav-item">Katapult</a></li>
+                                    <li class="nav-list"><a href="#szolgaltatasok" class="nav-item">Szolgáltatások</a></li>
+                                    <li class="nav-list"><a href="" class="nav-item">Rólunk</a></li>
+                                    <li class="nav-list"><a href="" class="nav-item">Menu</a></li>
+                                    <li class="nav-list"><a href="" class="nav-item">Menu</a></li>
+                                    <li class="nav-list"><a href="" class="nav-item">Menu</a></li>
+                                </div>
                             </div>
-                            <!-- Primary Navbar items -->
-                            <div class="navbar">
-                                <li class="nav-list active"><a href="#top" class="nav-item">Katapult</a></li>
-                                <li class="nav-list"><a href="#szolgaltatasok" class="nav-item">Szolgáltatások</a></li>
-                                <li class="nav-list"><a href="" class="nav-item">Rólunk</a></li>
-                                <li class="nav-list"><a href="" class="nav-item">Menu</a></li>
-                                <li class="nav-list"><a href="" class="nav-item">Menu</a></li>
-                                <li class="nav-list"><a href="" class="nav-item">Menu</a></li>
+                            <!-- Secondary Navbar items -->
+                            <div class="hidden lg:flex items-center">
+                                <button type="button" class="geek-cyan-btn geek-base-btn mr-3 uppercase">Lorem</button>
+                                <button type="button" class="geek-outline-btn uppercase">Ipsum</button>
+                            </div>
+                            <!-- Mobile menu button -->
+                            <div @click="toggle" class="xl:hidden flex items-center transition duration-700 ease-in-out">
+                                <button class="outline-none mobile-menu-button">
+                                <div x-cloak x-show="!open">
+                                    <img src="../src/images/svg/close_menu.svg" alt="">
+                                </div>
+                                <div x-cloak x-show="open">
+                                    <img src="../src/images/svg/open_menu.svg" alt="">
+                                </div>
+                                </button>
                             </div>
                         </div>
-                        <!-- Secondary Navbar items -->
-                        <div class="hidden lg:flex items-center">
-                            <button type="button" class="geek-cyan-btn geek-base-btn mr-3 uppercase">Lorem</button>
-                            <button type="button" class="geek-outline-btn uppercase">Ipsum</button>
+                        <!-- mobile menu -->
+                        <div x-cloak x-show="open" class="mobile-menu" x-bind="slide">
+                            <ul class="flex flex-col justify-center text-center list-none" >
+                                <li class="nav-list lg:hidden">
+                                    <p class="font-roboto-medium text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </li>
+                                <li class="nav-list active"><a href="#top" class="nav-item hover:text-white">Katapult</a></li>
+                                <li class="nav-list"><a href="#szolgaltatasok" class="nav-item hover:text-white">Szolgáltatások</a></li>
+                                <li class="nav-list"><a href="" class="nav-item hover:text-white">Rólunk</a></li>
+                                <li class="nav-list"><a href="" class="nav-item hover:text-white">Menu</a></li>
+                                <li class="nav-list"><a href="" class="nav-item hover:text-white">Menu</a></li>
+                                <li class="nav-list"><a href="" class="nav-item hover:text-white">Menu</a></li>
+                                <li class="nav-list"><button type="button" class="md:hidden geek-cyan-btn geek-base-btn mr-3 uppercase w-full mb-5">Lorem</button></li>
+                                <li class="nav-list"><button type="button" class="md:hidden geek-outline-btn uppercase w-full">Ipsum</button></li>
+                            </ul>
                         </div>
-                        <!-- Mobile menu button -->
-                        <div @click="toggle" class="xl:hidden flex items-center transition duration-700 ease-in-out">
-                            <button class="outline-none mobile-menu-button">
-                            <div x-cloak x-show="!open">
-                                <img src="../src/images/svg/close_menu.svg" alt="">
-                            </div>
-                            <div x-cloak x-show="open">
-                                <img src="../src/images/svg/open_menu.svg" alt="">
-                            </div>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- mobile menu -->
-                    <div x-cloak x-show="open" class="mobile-menu" x-bind="slide">
-                        <ul class="flex flex-col justify-center text-center list-none" >
-                            <li class="nav-list lg:hidden">
-                                <p class="font-roboto-medium text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                            </li>
-                            <li class="nav-list active"><a href="#top" class="nav-item hover:text-white">Katapult</a></li>
-                            <li class="nav-list"><a href="#szolgaltatasok" class="nav-item hover:text-white">Szolgáltatások</a></li>
-                            <li class="nav-list"><a href="" class="nav-item hover:text-white">Rólunk</a></li>
-                            <li class="nav-list"><a href="" class="nav-item hover:text-white">Menu</a></li>
-                            <li class="nav-list"><a href="" class="nav-item hover:text-white">Menu</a></li>
-                            <li class="nav-list"><a href="" class="nav-item hover:text-white">Menu</a></li>
-                            <li class="nav-list"><button type="button" class="md:hidden geek-cyan-btn geek-base-btn mr-3 uppercase w-full mb-5">Lorem</button></li>
-                            <li class="nav-list"><button type="button" class="md:hidden geek-outline-btn uppercase w-full">Ipsum</button></li>
-                        </ul>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </header>
-            <section class="hero-container">
+            <section class="hero-container px-5">
                 <div class="max-w-[580px]">
                     <h1 class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     <p class="text-white max-w-[510px] font-roboto-regular">
@@ -93,7 +96,7 @@
                 </div>
             </section>
     
-            <section class="container geek-container mx-auto">
+            <section class="container geek-container mx-auto px-5">
                 <div class="flex flex-col items-center justify-between">
                     <div class="w-full flex items-center justify-between py-10" style="min-height: 300px;">
                         <div x-data="dropdown" class="w-full py-5 flex flex-col items-center justify-center">
@@ -112,7 +115,7 @@
                     </div>
                 </div>
             </section>
-            <section class="min-h-[600px] mb-[6.25rem] flex-center">
+            <section class="min-h-[600px] mb-[6.25rem] flex-center px-5">
                 <div class="geek-container container mx-auto font-roboto-regular">
                     <h2 class="text-geek/cyan-blue" id="szolgaltatasok">Szolgáltatások</h2>
                     <p class="text-white text-center my-8 tracking-widest">There are many reasons to get down and start to get depressed about your situation. </p>
