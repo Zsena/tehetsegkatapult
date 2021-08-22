@@ -1,0 +1,11 @@
+.flex-wrapper .icon-card {
+    @apply w-full sm:w-[50%] md:w-[33%] max-w-[300px] mr-8 mb-8;
+}
+
+.icon-card .icon-card-body {
+    @apply w-full sm:max-w-[247px] text-white text-base;
+}
+
+.icon-card .icon-card-body .g-card-title {
+    @apply text-geek/cyan-blue font-inder text-xl mb-3;
+}

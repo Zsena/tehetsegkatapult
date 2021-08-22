@@ -2,13 +2,25 @@
 
 @layer base {
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   /* ----- base button styles ------ */
   .geek-base-btn {
-    @apply font-rubik-medium tracking-widest md:w-[170px] w-full text-white flex-center text-sm rounded py-3 shadow-md focus:outline-none;
+    @apply font-rubik-medium tracking-widest md:w-[170px] w-full text-white flex-center text-sm rounded py-3 shadow-md focus:outline-none transition duration-700 ease-in-out;
   }
 
   .geek-outline-btn {
     @apply font-rubik-medium tracking-widest md:w-[170px] w-full flex-center text-geek/yellow text-sm border border-geek/yellow
-      rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white;
+      rounded py-3 shadow-md focus:bg-geek/yellow focus:outline-none focus:text-white hover:bg-geek/yellow hover:text-white transition duration-700 ease-in-out;
+  }
+
+  h1 {
+    @apply text-[2.125rem] lg:text-[2.75rem] text-white font-inter-bold leading-tight;
+  }
+
+  h2 {
+    @apply text-[2rem] lg:text-[2.625rem] text-white font-inter-bold leading-tight text-center w-full;
   }
 }

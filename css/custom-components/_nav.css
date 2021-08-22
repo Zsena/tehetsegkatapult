@@ -1,5 +1,5 @@
 .navbar {
-  @apply hidden xl:flex items-center space-x-1 list-none tracking-widest;
+  @apply hidden xl:flex items-center space-x-1 list-none tracking-widest transition duration-700 ease-in-out;
 }
 
 .nav-item {

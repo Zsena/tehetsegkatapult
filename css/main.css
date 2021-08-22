@@ -6,10 +6,15 @@
 @import "tailwindcss/components";
 @import "./custom-components/_buttons.css";
 @import "./custom-components/_cards.css";
+@import "./custom-components/_images.css";
 @import "./custom-components/_nav.css";
 
 @import "./site/_hero.css";
 @import "./site/_partners.css";
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 
 @tailwind utilities;

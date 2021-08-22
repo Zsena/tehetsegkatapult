@@ -14,7 +14,9 @@ module.exports = {
         "geek/dark-blue" : '#040D3E',
         "geek/light-blue" : '#004d88',
         "geek/cyan-blue" : '#99EFD0',
-        "geek/yellow" : '#D1C941'
+        "geek/yellow" : '#D1C941',
+        "geek/gray" : '#c2c1c1',
+        "white" : '#FAFAFA'
       },
     },
     fontFamily: {
@@ -22,6 +24,7 @@ module.exports = {
       'inter-bold': ['Inter-Bold'],
       'roboto-regular': ['Roboto-Regular'],
       'roboto-medium': ['Roboto-Medium'],
+      'inder': ['Inder-Regular'],
      },
   },
   variants: {

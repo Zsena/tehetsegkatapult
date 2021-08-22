@@ -1,5 +1,5 @@
 /* hero */
 
 .hero-container {
-  @apply flex-col-reverse flex lg:flex-row justify-between container geek-container mx-auto;
+  @apply flex-col-reverse flex lg:flex-row justify-between container geek-container mx-auto my-10;
 }
