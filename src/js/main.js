@@ -52,4 +52,61 @@ document.addEventListener("alpine:init", () => {
       this.open = !this.open;
     },
   }));
+
+  window.Alpine.geekDialogs = window.Alpine.geekDialogs || {};
+
+  window.Alpine.geekDialogs = function(dialogType) {
+    if(window.Alpine.geekDialogs[dialogType] !== undefined) {
+        console.error("dialog tipus ismetlodik", dialogType)
+        return {}
+    }
+
+    window.Alpine.geekDialogs[dialogType] = {
+        isDialogOpen: false,
+        dialogType: dialogType,
+        openEventParams: {},
+        overlay: {
+            ['x-show']() {
+                return this.isDialogOpen;
+            }
+        },
+        dialog: {
+            ['x-show']() {
+                return this.isDialogOpen;
+            },
+            ['x-on:click.outside']() {
+                this.isDialogOpen = false;
+            }
+        },
+        open: {
+            ['x-on:click']() {
+                this.isDialogOpen = true;
+            }
+        },
+        close: {
+            ['x-on:click']() {
+                this.isDialogOpen = false;
+            }
+        },
+        changeDialog: function(dType) {
+            this.isDialogOpen = false;
+            var event = new CustomEvent("change-dialog", {
+                detail: {
+                    dialogType: dType
+                }
+            });
+            window.dispatchEvent(event);
+        },
+        bindings: {
+            ['x-on:change-dialog.window']($event) {
+                if (this.dialogType == $event.detail.dialogType) {
+                    this.isDialogOpen = true;
+                    this.openEventParams = $event.detail.openEventParams;
+                }
+            }
+        }
+    }
+    return window.Alpine.geekDialogs[dialogType]
+}
+
 });
