@@ -7,8 +7,8 @@ Dev site : [Geekrabbits](https://geekrabbits.hu/) ![](https://geekrabbits.hu/img
 | Concept        | Development           | Tools, lang  |
 | ------------- |:-------------:| -----:|
 | landing site      | later developed | Admin |
-| Design: Figma     | Zsena & Bence     |   css, Tailwind, Flexbox |
-|  Frontend | Zsena & Bence      |    Alpine.js, Hugo |
+| Design: Figma     | Zsena & Greta     |   css, Tailwind, Flexbox |
+|  Frontend | Zsena & Greta      |    Alpine.js, Hugo |
 
 Design: [Figma](https://www.figma.com/file/zdCvW3Jw109usIM8u6XQmG/Tehets%C3%A9gkatapult-desktop-design)
 
